@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 5, 2022, 11:23:54 PM
+    Author     : Tran Trang
+*/
+
+.bootdey{
+    margin-top: 20px;
+}
+.section-content{
+    margin-top: 150px;
+}
+.panel {
+    border: none;
+    box-shadow: none;
+}
+.filter-group header a{
+    color: black ;
+    display: flex;
+    flex-direction: column;
+}
+.filter-group a,
+.filter-group a:hover,
+.filter-group a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.filter-group a[data-toggle="collapse"] {
+    color: black;
+    background: #f8f9fa;
+}
+.list-menu{
+    list-style: none;
+    margin-left: 20px;
+}
+.panel-heading {
+    border-color:#eff2f7 ;
+    font-size: 16px;
+    font-weight: 300;
+}
+.panel-title {
+    color: #2A3542;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.adtocart{
+    background-color: #005a8d;
+}
+.adtocart:hover,
+.adtocart:focus{
+    background-color: #0056b3;
+}
+/*product list*/
+
+.prod-cat li a{
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.prod-cat li a {
+    color: #3b3b3b;
+}
+
+.prod-cat li ul {
+    margin-left: 30px;
+}
+
+.prod-cat li ul li a{
+    border-bottom:none;
+}
+.prod-cat li ul li a:hover,.prod-cat li ul li a:focus, .prod-cat li ul li.active a , .prod-cat li a:hover,.prod-cat li a:focus, .prod-cat li a.active{
+    background: none;
+    color: #ff7261;
+}
+
+.pro-lab{
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.pro-sort {
+    padding-right: 20px;
+    float: left;
+}
+
+.pro-page-list {
+    margin: 5px 0 0 0;
+}
+
+.product-list img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
+
+.product-list .pro-img-box {
+    position: relative;
+}
+@media(max-width:766px){
+    .pro-img-box img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+.adtocart {
+    background: #005a8d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #fff;
+    left: 43%;
+    top: 370px;
+    position: absolute;
+}
+
+.adtocart i{
+    color: #fff;
+    font-size: 25px;
+    line-height: 42px;
+}
+
+.pro-title {
+    color: #5A5A5A;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+}
+
+.product-list .price {
+    color:#fc5959 ;
+    font-size: 15px;
+    position: absolute; bottom: 30px;left: 50%;transform: translate(-50%, -50%);
+}
+
+.pro-img-details {
+    margin-left: -15px;
+}
+
+.pro-img-details img {
+    width: 100%;
+}
+
+.pro-d-title {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.product_meta {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+.product_meta span {
+    display: block;
+    margin-bottom: 10px;
+}
+.product_meta a, .pro-price{
+    color:#fc5959 ;
+}
+
+.pro-price, .amount-old {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.amount-old {
+    text-decoration: line-through;
+}
+
+.quantity {
+    width: 120px;
+}
+
+.pro-img-list {
+    margin: 10px 0 0 -15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.pro-img-list a {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pro-d-head {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.middle {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    margin: 0 15px;
+}
+.slider > .track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #dddddd;
+}
+.slider > .range {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #9a9a9a;
+}
+.slider > .thumb {
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    background-color: #9a9a9a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(187,187,187,.1);
+    transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+    left: 25%;
+    transform: translate(-15px, -10px);
+}
+.slider > .thumb.right {
+    right: 25%;
+    transform: translate(15px, -10px);
+}
+.slider > .thumb.hover {
+    box-shadow: 0 0 0 20px rgba(187,187,187,.1);
+}
+.slider > .thumb.active {
+    box-shadow: 0 0 0 40px rgba(187,187,187,.2);
+}
+
+input[type=range] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 2;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: 0 none;
+    background-color: red;
+    -webkit-appearance: none;
+}
